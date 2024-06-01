@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
+
+
 const Navbar = () => {
   return (
     <>
       <div className=" pt-10 relative" id="nav-section">
         <img
-          className=" absolute right-0 top-0 w-[50%] max-h-[90vh]"
+          className=" absolute right-0 top-0 w-[50%] max-h-[90vh] dark:opacity-60"
           src="./images/bannerimg.png"
           alt=""
         />
@@ -14,7 +16,7 @@ const Navbar = () => {
           <div className="flex justify-between  sticky">
             <div className="logo flex items-center">
               <img className="w-[40px]" src="./images/logo.png" alt="" />
-              <h3 className="ml-2 text-2xl text-[#1B1C57] font-lexend font-bold">Haunter</h3>
+              <h3 className="ml-2 text-2xl text-[#1B1C57] font-lexend font-bold dark:text-[#e79d14]">Haunter</h3>
             </div>
             <div className="flex item gap-14">
               <ul className="flex items-center gap-6">
